@@ -1,8 +1,8 @@
-async function createLogFile(tp) { 
+async function createLogFile(tp, folderPath) { 
     
     const BL_DELETE_ON_FILE_EXISTS = true;
 
-	const FOLDER_LOG = "Log";
+	const FOLDER_LOG = folderPath;
 	const FOLDER_MONTH = `${tp.date.now('YYYY-MM')}`;
 	const FILE_TODAY = `${tp.date.now()}`;
 
